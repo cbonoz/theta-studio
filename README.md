@@ -17,7 +17,6 @@ How to integrate live theta streams into a react application
 
 - Additional integrations with the theta network.
 - Optional user login for tfuel
-- Tfuel integration
 - Full screen mode
 - Voting and reviews
 - More categories and layouts
