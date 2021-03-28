@@ -8,6 +8,7 @@ Theta Studio simulates a movie theatre like environment for discovering and play
 - Renders live streams in a carousel / explorer format.
 - Allows toggling between theta categories
 - No user accounts required.
+- Allows users to focus on live streams without having to search through pre-recorded content.
 
 ## What we learned
 
