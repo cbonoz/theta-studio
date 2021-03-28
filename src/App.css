@@ -1,0 +1,22 @@
+.content-area {
+  height: 75vh;
+  color: white;
+  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  background: black;
+}
+
+.orange {
+  color: orange;
+}
+
+.header-title {
+  font-family: "Helvetica Neue";
+  font-weight: 100;
+}
+
+.header-area {
+  margin-left: 20px;
+}
