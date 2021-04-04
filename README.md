@@ -2,6 +2,8 @@
 
 Theta Studio simulates a movie theatre like environment for discovering and playing your favorite live theta streamers.
 
+Applying to video platform integrations with Theta and Extensions of Theta products such as databases or platforms cataloguing user-produced video streams hackathon categories. This could be integrated into Theta as a part of their core product, or serve as a standalone app.
+
 ## What it does
 
 - Uses theta API's to return a list of live streams based on categories
@@ -16,12 +18,12 @@ How to integrate live theta streams into a react application
 
 ## Future work
 
-- Additional integrations with the theta network.
 - Optional user login for tfuel
 - Full screen mode
 - Voting and reviews
-- More categories and layouts
-- Persistent database of indexed categories.
+- More categories and configurable layouts
+- Persistent database of indexed categories
+- Dynamic categories
 
 ### Notes
 
