@@ -2,7 +2,7 @@
 
 Theta Studio simulates a movie theatre like environment for discovering and playing your favorite live theta streamers.
 
-Applying to video platform integrations with Theta and Extensions of Theta products such as databases or platforms cataloguing user-produced video streams hackathon categories. This could be integrated into Theta as a part of their core product, or serve as a standalone app.
+Build for the Theta 2021 integration hackathon. This could be integrated into Theta as a part of their core product, or serve as a standalone app.
 
 ## What it does
 
