@@ -3,10 +3,14 @@ import querystring from "querystring";
 export const BASE_URL = "https://api.theta.tv/v1";
 
 export const getListUrl = (category) => {
+  // if (category === "recommended") {
+  //   return `https://api.theta.tv/v1/video/recommended`;
+  // }
   const params = {
     number: 500,
     incl_off: true,
   };
+
   const url = `${BASE_URL}/${
     category || "new_creators"
   }/channel/list?${querystring.stringify(params)}`;
@@ -18,7 +22,7 @@ const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-export const convertUnderscore = (x) => x.replace("_", " ");
+export const convertUnderscore = (x) => capitalize(x.replaceAll("_", " "));
 
 export const getStreamUrl = (liveStreamId) =>
   `${BASE_URL}/live/${liveStreamId}`;

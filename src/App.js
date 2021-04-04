@@ -19,7 +19,6 @@ import {
   faVolumeUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { findDOMNode } from "react-dom";
 import { getListUrl } from "./util/streams";
 
@@ -35,10 +34,9 @@ const carouselState = {
 };
 
 const CATEGORIES = [
-  "new_creators",
-  "recommended",
-  "blockchain",
+  "theta_brand_partner",
   "gfuel",
+  "blockchain",
   "spanish",
 ].map((x) => ({
   label: convertUnderscore(x),
@@ -63,8 +61,9 @@ function App() {
       const { data } = result;
       setStreams(data.body);
     } catch (e) {
-      alert("Unable to get streams: " + e);
-      console.error(e);
+      const errorMessage = `Error connecting to Theta: ${e}`;
+      alert(errorMessage);
+      console.error(errorMessage);
     }
   };
 
