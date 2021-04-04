@@ -37,6 +37,8 @@ const CATEGORIES = [
   "theta_brand_partner",
   "gfuel",
   "blockchain",
+  "new_creators",
+  "recommended",
   "spanish",
 ].map((x) => ({
   label: convertUnderscore(x),
@@ -61,7 +63,12 @@ function App() {
       const { data } = result;
       setStreams(data.body);
     } catch (e) {
-      const errorMessage = `Error connecting to Theta: ${e}`;
+      let stringError = e.toString();
+      if (stringError.indexOf("Network Error") !== -1) {
+        stringError = "Network Error (CORS)";
+      }
+
+      const errorMessage = `Error fetching live Theta streams for ${category.label}: ${stringError}`;
       alert(errorMessage);
       console.error(errorMessage);
     }
